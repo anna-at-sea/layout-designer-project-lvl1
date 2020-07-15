@@ -28,7 +28,7 @@
             <div><img src="images\logo.svg" alt="logo" width="150px"></div>
             <div class="bigger-text">ЖК «Лунное море»</div>
             <div>Место, откуда не хочется улетать</div>
-            <button><a href="#book">Забронировать</a></button>
+            <button class="button-color-white"><a href="#book">Забронировать</a></button>
         </div>
         <img src="images\banner-crop.png" alt="banner" height="350px">
         <div id="pros" class="center">
@@ -50,6 +50,49 @@
                 <img src="images\moon-2.jpg" alt="astronaut" height="170px">
                 <div class="w-500-left"><h2>Места для отдыха</h2>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
                     <br><br>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</div>
+            </div>
+        </div>
+        <div id="book" class="center color-grey extra-padding">
+            <div class="col">
+                <h2>Оставьте заявку сегодня!</h2>
+                <form>
+                <fieldset>
+                    <legend>Параметры квартиры</legend>
+                    <div class="content-1">
+                    <label>Количество комнат:</label>
+                    <select class="form-field-style wider-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    </div>
+                    <div class="content-1">
+                    <label>Отделка:</label>
+                    <select class="form-field-style">
+                        <option>Без отделки</option>
+                        <option>Отделка Standard</option>
+                        <option>Отделка Lux</option>
+                    </select>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Контактная информация</legend>
+                    <div class="content-2">
+                    <label>Имя:</label>
+                    <input type="text" class="form-field-style">
+                    </div>
+                    <div class="content-2">
+                    <label>Телефон:</label>
+                    <input type="text" class="form-field-style">
+                    </div>
+                    <div class="content-2">
+                    <label>E-mail:</label>
+                    <input type="text" class="form-field-style">
+                    </div>
+                </fieldset>
+                <button class="button-color-green">Отправить</button>
+                </form>
             </div>
         </div>
     </main>

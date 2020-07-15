@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     color: #303846;
-    overflow-x: hidden;
+    overflow-x: hidde;
 }
 
 main {
@@ -77,8 +77,12 @@ button {
     margin-top: 25px;
     cursor: pointer;
     padding: 10px;
-    border: 1px solid white;
     border-radius: 10px;
+    width: 125px;
+}
+
+.button-color-white {
+    border: 1px solid white;
 }
 
 button a {
@@ -126,4 +130,61 @@ button a {
 .w-500-left {
     max-width: 500px;
     margin-left: 70px;
+}
+
+.col {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    border-color: #08e2b3;
+    width: 350px;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+legend {
+    color: #08e2b3;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.content-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-field-style {
+    border: 1.5px solid rgba(158, 158, 158, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.wider-select {
+    width: 133px;
+}
+
+.button-color-green {
+    border: 1px solid #08e2b3;
+    color: #08e2b3;
+    font-weight: bold;
+}
+
+.extra-padding {
+    padding-bottom: 50px;
+    padding-top: 30px;
 }
