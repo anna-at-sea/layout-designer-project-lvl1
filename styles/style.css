@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     color: #303846;
-    overflow-x: hidde;
+    overflow-x: hidden;
 }
 
 main {
@@ -33,20 +33,24 @@ header {
     flex-grow: 1;
 }
 
-ul {
+.flex-container ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
     display: flex;
 }
 
-li {
+.flex-container li {
     margin-left: 10px;
     margin-right: 10px;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+.a-color-dark {
     color: #303846;
 }
 
@@ -118,6 +122,7 @@ button a {
 }
 
 .img-center-of-text {
+    display: flex;
     align-items: center;
 }
 
@@ -187,4 +192,28 @@ legend {
 .extra-padding {
     padding-bottom: 50px;
     padding-top: 30px;
+}
+
+.footer-styles {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #303846;
+    color: white;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bolder-text-footer {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.thinner-text-footer {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.min-w-300 {
+    min-width: 300px;
 }
