@@ -87,9 +87,6 @@ button {
 
 .button-color-white {
     border: 1px solid white;
-}
-
-button a {
     color: white;
 }
 
@@ -119,6 +116,10 @@ button a {
 
 .color-grey {
     background-color: #f7f7f7;
+}
+
+.color-white {
+    background-color: white;
 }
 
 .img-center-of-text {
@@ -216,4 +217,9 @@ legend {
 
 .min-w-300 {
     min-width: 300px;
+}
+
+.anchor {
+    padding: 70px;
+    margin: -70px;
 }
