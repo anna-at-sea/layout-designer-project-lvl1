@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="header-styles">
         <div class="flex-container">
-            <div><img src="images/logo.svg" alt="logo" height="50">&nbsp;&nbsp;Лунное море</div>
-            <div class="grow-max"></div>
-            <div>
+            <div class="img-center-of-text"><img src="images/logo.svg" alt="logo" height="50">&nbsp;&nbsp;Лунное море</div>
+            <nav>
                 <ul>
                     <li><a href="#pros" class="a-color-dark">Преимущества</a></li>
                     <li><a href="#about" class="a-color-dark">О ЖК</a></li>
                     <li><a href="#places" class="a-color-dark">Места для отдыха</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
     <main>
+    <section>
         <div class="above-img">
-            <div><img src="images/logo.svg" alt="logo" height="150"></div>
-            <div class="bigger-text">ЖК «Лунное море»</div>
+            <img src="images/logo.svg" alt="logo" height="150">
+            <h1 class="bigger-text">ЖК «Лунное море»</h1>
             <div>Место, откуда не хочется улетать</div>
-            <form action="#book">
-                <button class="button-color-white">Забронировать</button>
-            </form>
+            <a href="#book"><button class="btn btn-color-white">Забронировать</button></a>
         </div>
+    </section>
+    <section>
         <div id="pros" class="anchor"></div>
         <div class="center color-white">
             <div class="flex1000">
@@ -40,6 +40,8 @@
                 <div class="w-300"><h2>Близость к Москве</h2>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</div>
             </div>
         </div>
+    </section>
+    <section>
         <div id="about" class="anchor"></div>
         <div class="center color-grey">
             <div class="flex1000 color-grey img-center-of-text">
@@ -48,6 +50,8 @@
                 <img src="images/moon-1.jpg" alt="moon" height="170">
             </div>
         </div>
+    </section>
+    <section>
         <div id="places" class="anchor"></div>
         <div class="center color-white">
             <div class="flex1000 img-center-of-text">
@@ -56,6 +60,8 @@
                     <br><br>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</div>
             </div>
         </div>
+    </section>
+    <section>
         <div id="book" class="anchor"></div>
         <div class="center color-grey extra-padding">
             <div class="col">
@@ -96,10 +102,11 @@
                     <input type="text" class="form-field-style">
                     </div>
                 </fieldset>
-                <button class="button-color-green">Отправить</button>
+                <button class="btn btn-color-green">Отправить</button>
                 </form>
             </div>
         </div>
+    </section>
     </main>
 
     <footer>
