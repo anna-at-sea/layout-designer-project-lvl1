@@ -2,35 +2,34 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     color: #303846;
-    margin: 70px 0px 0px 0px;
-    padding: 0px;
+    margin: 70px 0 0 0;
+    padding: 0;
 }
 
 .header-styles {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 10px;
-    background-color: white;
-    font-weight: 600;
-    z-index: 1;
-}
-
-.flex-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
+    font-weight: 600;
+    padding: 10px;
 }
 
-.flex-container ul {
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.horizontal-menu ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
     display: flex;
 }
 
-.flex-container li {
+.horizontal-menu li {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -55,24 +54,32 @@ a {
     background-image: url(../images/banner-crop.png);
 }
 
-.above-img div {
-    display: flex;
+.w-1000 {
+    width: 1000px;
+    overflow-x: hidden;
+}
+
+.col {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-above-img {
     margin: 1px;
     color: white;
+    font-weight: 600;
 }
 
 .bigger-text {
     font-size: 36px;
-    font-weight: 600;
-    color: white;
-    margin: 1px;
 }
 
 .btn {
     background: transparent;
-    margin-top: 25px;
+    margin-top: 20px;
     cursor: pointer;
-    padding: 10px;
+    padding: 8px;
     border-radius: 10px;
     width: 125px;
     border-width: 1px;
@@ -90,11 +97,11 @@ a {
     font-weight: bold;
 }
 
-.flex1000 {
+.main-content-box {
     display: flex;
     justify-content: center;
-    width: 1000px;
-    margin: 50px;
+    margin: 20px;
+    padding: 30px;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -136,12 +143,6 @@ a {
 .w-500-left {
     max-width: 500px;
     margin-left: 70px;
-}
-
-.col {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
 }
 
 fieldset {
@@ -214,6 +215,6 @@ legend {
 }
 
 .anchor {
-    padding-top: 70px;
-    margin-top: -70px;
+    position: relative;
+    top: -70px;
 }
