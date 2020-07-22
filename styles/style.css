@@ -1,8 +1,18 @@
+:root {
+    --header-height: 50px;
+    --light-text: white;
+    --light-back: white;
+    --dark-text: #303846;
+    --dark-back: #303846;
+    --grey-back: #f7f7f7;
+    --book-form: #08e2b3;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    color: #303846;
-    margin: 70px 0 0 0;
+    color: var(--dark-text);
+    margin: var(--header-height) 0 0 0;
     padding: 0;
 }
 
@@ -10,7 +20,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--light-back);
+    height: var(--header-height);
     font-weight: 600;
     padding: 10px;
 }
@@ -40,7 +51,7 @@ a {
 }
 
 .a-color-dark {
-    color: #303846;
+    color: var(--dark-text);
 }
 
 .above-img {
@@ -67,7 +78,7 @@ a {
 
 .text-above-img {
     margin: 1px;
-    color: white;
+    color: var(--light-text);
     font-weight: 600;
 }
 
@@ -87,13 +98,13 @@ a {
 }
 
 .btn-color-white {
-    border-color: white;
-    color: white;
+    border-color: var(--light-text);
+    color: var(--light-text);
 }
 
 .btn-color-green {
-    border-color: #08e2b3;
-    color: #08e2b3;
+    border-color: var(--book-form);
+    color: var(--book-form);
     font-weight: bold;
 }
 
@@ -122,11 +133,11 @@ a {
 }
 
 .color-grey {
-    background-color: #f7f7f7;
+    background-color: var(--grey-back);
 }
 
 .color-white {
-    background-color: white;
+    background-color: var(--light-back);
 }
 
 .img-center-of-text {
@@ -146,7 +157,7 @@ a {
 }
 
 fieldset {
-    border-color: #08e2b3;
+    border-color: var(--book-form);
     width: 350px;
     font-weight: bold;
     padding-right: 20px;
@@ -154,7 +165,7 @@ fieldset {
 }
 
 legend {
-    color: #08e2b3;
+    color: var(--book-form);
     font-weight: bold;
     font-size: 18px;
 }
@@ -193,8 +204,8 @@ legend {
 .footer-styles {
     display: flex;
     flex-wrap: wrap;
-    background-color: #303846;
-    color: white;
+    background-color: var(--dark-back);
+    color: var(--light-text);
     justify-content: space-evenly;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -216,5 +227,5 @@ legend {
 
 .anchor {
     position: relative;
-    top: -70px;
+    top: calc(0px - var(--header-height));
 }
